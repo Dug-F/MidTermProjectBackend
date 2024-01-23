@@ -87,7 +87,7 @@ Create a .env file
 - note that the chevrons (<>) are not needed in the database connection string, they are purely to indicate where the connection string should go
 - also note that you can use a different port number if desired
 
-Initialise the dattabase
+Initialise the database
 - check the database seed date in \db\helpers and amend if desired
 - ```npm run reset-database```
 - you should see a 'database reset successful' message to indicate that the database has been correctly initialised
