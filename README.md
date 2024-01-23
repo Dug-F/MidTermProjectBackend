@@ -90,7 +90,7 @@ Create a .env file
 Initialise the dattabase
 - check the database seed date in \db\helpers and amend if desired
 - ```npm run reset-database```
-- 
+- you should see a 'database reset successful' message to indicate that the database has been correctly initialised
 
 Start the server
 
