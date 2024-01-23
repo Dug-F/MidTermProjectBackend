@@ -55,6 +55,49 @@ Above all, we learned how to function as a high-performance team under significa
 
 **Server:** JavaScript, NodeJS, Express, PostgreSQL, SuperTest, Vitest
 
+<h2>How to run locally</h2>
+
+Clone the project
+
+```bash
+  git clone https://github.com/Dug-F/MidTermProjectBackend.git
+```
+
+Go to the project directory
+
+```bash
+  cd MidTermProjectBackend
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Create a PostgresSQL database (we used ElephantSQL)
+
+Create a .env file
+- for security reasons there is no .env file in the repo.
+- create a file named .env in the root folder of the project with the following contentsL
+    ```
+    DB_CONNECTION_STRING="<connection string of database>"
+    PORT="3000"
+    ```
+- note that the chevrons (<>) are not needed in the database connection string, they are purely to indicate where the connection string should go
+- also note that you can use a different port number if desired
+
+Initialise the dattabase
+- check the database seed date in \db\helpers and amend if desired
+- ```npm run reset-database```
+- 
+
+Start the server
+
+```bash
+  npm run dev
+```
+
 <h2>Authors</h2>
 
 - [Doug Forbes](https://github.com/Dug-F)
