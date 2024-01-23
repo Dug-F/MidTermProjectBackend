@@ -69,26 +69,26 @@ export async function resetDatabase() {
       ('Week 12 - Languages and Architecture');
     `);
 
-  // Seed the workshops table
-  await pool.query(`
-        INSERT INTO workshops (name, description, date, week_id)
-        VALUES
-        // ... (Workshop entries are continued for brevity)
-    `);
+  // // Seed the workshops table
+  // await pool.query(`
+  //       INSERT INTO workshops (name, description, date, week_id)
+  //       VALUES
+  //       // ... (Workshop entries are continued for brevity)
+  //   `);
 
-  // Seed the bookmarks table
-  await pool.query(`
-        INSERT INTO bookmarks (description, url, helpful_links, workshop_id)
-        VALUES
-        // ... (Bookmark entries are continued for brevity)
-    `);
+  // // Seed the bookmarks table
+  // await pool.query(`
+  //       INSERT INTO bookmarks (description, url, helpful_links, workshop_id)
+  //       VALUES
+  //       // ... (Bookmark entries are continued for brevity)
+  //   `);
 
-  // Seed the comments table
-  await pool.query(`
-      INSERT INTO comments (comment,added_date,workshop_id)
-      VALUES
-      // ... (Comment entries are continued for brevity)
-    `);
+  // // Seed the comments table
+  // await pool.query(`
+  //     INSERT INTO comments (comment,added_date,workshop_id)
+  //     VALUES
+  //     // ... (Comment entries are continued for brevity)
+  //   `);
 }
 
 // import { pool } from "./index.js";
