@@ -98,6 +98,37 @@ Start the server
   npm run dev
 ```
 
+<h2>API Reference</h2>
+
+Get all workshops
+```
+GET http://127.0.0.1:3000/workshops
+```
+
+Get workshop with id 1
+```
+GET http://127.0.0.1:3000/workshops/1
+```
+
+Get comments for workshop 1
+```
+GET http://127.0.0.1:3000/workshops/1/comments
+```
+
+Get bookmarks for workshop 1
+```
+GET http://127.0.0.1:3000/workshops/1/bookmarks
+```
+
+Create new comment for workshop 1
+```
+POST http://127.0.0.1:3000/workshops/1/comments
+// with body
+{
+comment: commentText
+}
+```
+
 <h2>Authors</h2>
 
 - [Doug Forbes](https://github.com/Dug-F)
